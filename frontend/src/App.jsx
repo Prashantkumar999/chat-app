@@ -5,6 +5,8 @@ import { PaperAirplaneIcon, FaceSmileIcon } from "@heroicons/react/24/outline";
 import "./App.css";
 
 const socket = io(import.meta.env.VITE_BACKEND_URL);
+console.log(import.meta.env.VITE_BACKEND_URL);
+
 
 function App() {
   const [username, setUsername] = useState("");
