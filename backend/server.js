@@ -10,7 +10,10 @@ const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://chat-app-frontend-pink-omega.vercel.app",
+    origin: [
+      "https://chat-app-frontend-pink-omega.vercel.app",
+      "http://localhost:5173",
+    ],
     methods: ["GET", "POST"],
   },
 });
